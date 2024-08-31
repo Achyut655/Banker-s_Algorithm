@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banker's Algorithm</title>
+  <link rel="stylesheet" href="a.css">
+</head>
+<body>
+  <h1>Banker's Algorithm</h1>
+  <div>
+    <label for="numProcess">Number of Processes:</label>
+    <input type="number" id="numProcess" min="1" required>
+    <label for="numResource">Number of Resource Types:</label>
+    <input type="number" id="numResource" min="1" required>
+    <button id="createTables" onclick="createTables()">Create Tables</button>
+  </div>
+  <div id="allTables"></div>
+  <button id="findNeed" disabled onclick="findNeed()">Find Need</button>
+  <button id="findAvailable" disabled onclick="findAvailable()">Find Available</button>
+  <button id="safeSequence" disabled onclick="generateSafeSeq()">Generate Safe Sequence</button>
+  <div id="resourceRequestPart" style="visibility: hidden;">
+    <label for="requestProcess">Process Number:</label>
+    <input type="number" id="requestProcess" min="1">
+    <div id="makeResourceRequest"></div>
+    <button id="checkSafety" disabled onclick="checkSafeState()">Check Safe State</button>
+  </div>
+  <button id="resourceRequest" disabled onclick="resourceRequest()">Resource Request</button>
+  <button onclick="reset()">Reset</button>
+  <script src="a.js"></script>
+</body>
+</html>

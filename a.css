@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f3f3f3;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    margin-right: 10px;
+    color: #555;
+}
+
+input, button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #fff;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#allTables {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#resourceRequestPart {
+    visibility: hidden;
+}
+
+.makeResourceRequest {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:disabled:hover {
+    background-color: #ccc;
+}
+
+button#resourceRequest {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button#resourceRequest:hover {
+    background-color: #45a049;
+}
+
+button#checkSafety {
+    background-color: #008CBA;
+    color: white;
+}
+
+button#checkSafety:hover {
+    background-color: #007a9b;
+}
